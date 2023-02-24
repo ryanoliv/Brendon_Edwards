@@ -1,0 +1,188 @@
+/* -------------------- */
+/*        RESET         */
+/* -------------------- */
+
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -------------------- */
+/*        FONTS         */
+/* -------------------- */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""),
+    url("/fonts/montserrat/montserrat-v23-latin-regular.woff2") format("woff2"),
+    url("/fonts/montserrat/montserrat-v23-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(""),
+    url("/fonts/montserrat/montserrat-v23-latin-700.woff2") format("woff2"),
+    url("/fonts/montserrat/montserrat-v23-latin-700.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""),
+    url("/fonts/source-sans-pro/source-sans-pro-v19-latin-regular.woff2")
+      format("woff2"),
+    url("/fonts/source-sans-pro/source-sans-pro-v19-latin-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(""),
+    url("/fonts/source-sans-pro/source-sans-pro-v19-latin-700.woff2")
+      format("woff2"),
+    url("/fonts/source-sans-pro/source-sans-pro-v19-latin-700.woff")
+      format("woff");
+}
+
+/* -------------------- */
+/*     VARIABLES        */
+/* -------------------- */
+:root {
+  /* colors */
+  --clr-primary: #faf9f7;
+  --clr-primary-dark: #dcdcdc;
+  --clr-secondary: #965432;
+  --clr-tertiary: #1d211d;
+  --clr-tertiary-light: #585858;
+
+  /* font-families */
+  --ff-main: "Montserrat", Verdana, sans-serif;
+  --ff-accent: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--ff-main);
+  font-size: var(--fs-400);
+  color: var(--clr-tertiary);
+  background-color: var(--clr-primary);
+
+  opacity: 1;
+  transition: opacity 0.1s;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.container {
+  padding-inline: 1.5rem;
+  /* max-width: 120rem; */
+  margin-inline: auto;
+  max-width: 87.5rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+.streched-img {
+  height: 100%;
+}
+
+.show {
+  display: block;
+}
+
+.scrolled-header {
+  background-color: #faf9f7;
+}

@@ -1,0 +1,95 @@
+/* ------------------- */
+/*     HERO SECTION    */
+/* ------------------- */
+
+.section-hero__hero-text {
+  color: var(--clr-primary);
+  animation: slideUp 2s;
+
+  &::after {
+    background-color: var(--clr-primary);
+  }
+
+  &-container {
+    position: relative;
+    z-index: 10;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* ------------------- */
+/*  HOME WORKS SECTION */
+/* ------------------- */
+
+.section-works-home__works-card-text-container {
+  max-width: 500px;
+
+  &-title {
+    font-size: var(--fs-400);
+    color: var(--clr-tertiary);
+    margin-bottom: 0.5rem;
+    text-align: center;
+
+    font-style: italic;
+  }
+}
+
+.section-works-home__works-card-text {
+  font-size: 14px;
+  color: var(--clr-tertiary);
+  font-family: var(--ff-accent);
+  text-align: center;
+}
+
+/* ------------------- */
+/*   WORKS SECTION     */
+/* ------------------- */
+
+.section-works__works-filters-btn {
+  border: 2px solid var(--clr-tertiary);
+  color: var(--clr-tertiary);
+
+  &:hover {
+    background-color: var(--clr-tertiary);
+    color: var(--clr-primary);
+  }
+
+  &.active {
+    background-color: var(--clr-tertiary);
+    color: var(--clr-primary);
+  }
+}
+
+.section-works__works-card-text {
+  color: var(--clr-tertiary-light);
+}
+
+/* ------------------- */
+/*   ABOUT SECTION     */
+/* ------------------- */
+
+.section-about__about-content-text-container-text {
+  color: var(--clr-tertiary);
+  font-family: var(--ff-accent);
+}
+
+/* ------------------- */
+/*   MEDIA QUERIES     */
+/* ------------------- */
+
+@media (min-width: 600px) {
+  .container {
+    padding: 0 3.5rem;
+  }
+}

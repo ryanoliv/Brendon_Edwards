@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="canonical" href="https://www.brendonedwards.com/blog" />
+
+    <meta
+      name="description"
+      content="Brendon Edwards is an abstract artist born in 1970 in Johannesburg, South Africa. He is currently living and working in KwaZulu-Natal."
+    />
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="Brendon Edwards | Blog" />
+    <meta
+      property="og:description"
+      content="Brendon Edwards is an abstract artist born in 1970 in Johannesburg, South Africa. He is currently living and working in KwaZulu-Natal."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.brendonedwards.com/blog" />
+    <meta
+      property="og:image"
+      content="/media/images/landing/brendon-edwards-portrait.webp"
+    />
+
+    <!--Favicons-->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/media/favicons/favicon-32-darker.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/media/favicons/favicon-16-darker.png"
+    />
+
+    <!--Preload-->
+    <link
+      rel="preload"
+      as="image"
+      href="/media/logos/Brendon_Edwards-logo-300.webp"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/montserrat/montserrat-v23-latin-regular.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/montserrat/montserrat-v23-latin-700.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/source-sans-pro/source-sans-pro-v19-latin-regular.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/source-sans-pro/source-sans-pro-v19-latin-700.woff2"
+      crossorigin
+    />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="/css/reset.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/navigation.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/blog.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/main.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/footer.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
+    />
+    <!-- <link rel="stylesheet" href="/css/index.css"> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'; this.onload=null;"> -->
+
+    <title>Brendon Edwards | Blog</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo-box">
+          <a href="#"
+            ><img
+              src="/media/logos/Brendon_Edwards-logo-300.webp"
+              alt="Brendon Edwards Logo"
+              class="header__logo"
+              width="300"
+              height="48"
+            />
+          </a>
+        </div>
+        <div class="navigation">
+          <input
+            type="checkbox"
+            class="navigation__checkbox"
+            id="navi-toggle"
+          />
+          <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+          </label>
+          <!-- <div class="navigation__background">&nbsp;</div> -->
+          <nav class="navigation__nav">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="index.html" class="navigation__link">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a href="works.html" class="navigation__link">Works</a>
+              </li>
+              <li class="navigation__item">
+                <a href="about.html" class="navigation__link">About</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Blog</a>
+              </li>
+              <!-- <li class="navigation__item">
+                <a href="contact.html" class="navigation__link">Contact</a>
+              </li> -->
+            </ul>
+          </nav>
+        </div>
+        <div class="navigation-desktop">
+          <nav class="navigation-nav-desktop">
+            <ul class="navigation__list-desktop">
+              <li class="navigation__item-desktop">
+                <a href="index.html" class="navigation__link-desktop dark-links"
+                  >Home</a
+                >
+              </li>
+              <li class="navigation__item-desktop">
+                <a href="works.html" class="navigation__link-desktop dark-links"
+                  >Works</a
+                >
+              </li>
+              <li class="navigation__item-desktop">
+                <a href="about.html" class="navigation__link-desktop dark-links"
+                  >About</a
+                >
+              </li>
+              <li class="navigation__item-desktop">
+                <a href="#" class="navigation__link-desktop dark-links">Blog</a>
+              </li>
+              <!-- <li class="navigation__item-desktop">
+                <a
+                  href="contact.html"
+                  class="navigation__link-desktop dark-links"
+                  >Contact</a
+                >
+              </li> -->
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-blog">
+        <div class="container">
+          <div class="section-blog__blog-entries">
+            <h1 class="section-blog__blog-entries-title">Blog Entries</h1>
+            <div class="section-blog__blog-card">
+              <h2 class="section-blog__blog-card-title">Deception</h2>
+              <h3 class="section-blog__blog-card-date">February 5th 2018</h3>
+              <p class="section-blog__blog-card-text">
+                I will hold the hope, I will heed the weight, I won't wander in
+                the grey waste of dread.... Where the day hunts the weak heart,
+                and midnight haunts the timid soul. I won't let the window of
+                truth be drawn by a curtain of lies.
+              </p>
+            </div>
+            <div class="section-blog__blog-card">
+              <h2 class="section-blog__blog-card-title">Hard Hope</h2>
+              <h3 class="section-blog__blog-card-date">June 6th 2017</h3>
+              <p class="section-blog__blog-card-text">
+                The colour is black, the number is zero, time is frozen, the
+                mind is stuck, hope deals the hardest blows....but fear is where
+                our cancer lives and grows.
+              </p>
+            </div>
+            <div class="section-blog__blog-card">
+              <h2 class="section-blog__blog-card-title">Locusts</h2>
+              <h3 class="section-blog__blog-card-date">May 25th 2017</h3>
+              <p class="section-blog__blog-card-text">
+                The wise hidden men have told us once again that the whole wide
+                world is breaking... and just as we begin too see the beauty of
+                it all, it breaks and we crumble with its fall.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__logo-container">
+            <img
+              src="media/logos/logo-white.png"
+              alt="Brendon Edwards Logo"
+              class="footer__logo"
+              width="370"
+              height="59"
+            />
+          </div>
+          <div class="footer__links-outer">
+            <div class="footer__links-container">
+              <ul class="footer__links-container">
+                <li class="footer__links-title">Contact</li>
+                <li class="footer__links-link">
+                  <a
+                    href="mailto:brendon@brendonedwards.com"
+                    target="_blank"
+                    rel="nooppener noreferrer"
+                    class="footer__link"
+                    >Email</a
+                  >
+                </li>
+                <li class="footer__links-link">
+                  <a
+                    href="https://wa.me/27792703656"
+                    target="_blank"
+                    rel="nooppener noreferrer"
+                    class="footer__link"
+                    >WhatsApp</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__links-container">
+              <ul class="footer__links-container">
+                <li class="footer__links-title">Quick Links</li>
+                <li class="footer__links-link">
+                  <a href="/index.html" class="footer__link">Home</a>
+                </li>
+                <li class="footer__links-link">
+                  <a href="/works.html" class="footer__link">Works</a>
+                </li>
+                <li class="footer__links-link">
+                  <a href="/about.html" class="footer__link">About</a>
+                </li>
+                <li class="footer__links-link">
+                  <a href="#" class="footer__link">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__links-container">
+              <ul class="footer__links-container">
+                <li class="footer__links-title">Social</li>
+                <li class="footer__links-link">
+                  <a
+                    href="https://www.facebook.com/brendon.edwards.161"
+                    target="_blank"
+                    rel="nooppener noreferrer"
+                    class="footer__link"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="footer__links-link">
+                  <a
+                    href="https://www.instagram.com/brendon_edwards"
+                    target="_blank"
+                    rel="nooppener noreferrer"
+                    class="footer__link"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="footer__links-link">
+                  <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    rel="nooppener noreferrer"
+                    class="footer__link"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__copyright-container">
+            <p class="footer__copyright" id="footer-year">
+              &copy; Brendon Edwards 2022. All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const year = new Date().getFullYear();
+
+      const date = `&copy; Brendon Edwards ${year}. All Rights Reserved.`;
+
+      document.getElementById("footer-year").innerHTML = date;
+    </script>
+  </body>
+</html>

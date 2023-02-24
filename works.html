@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      html {
+        visibility: hidden;
+        opacity: 0;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="canonical" href="https://www.brendonedwards.com/works" />
+
+    <meta
+      name="description"
+      content="Brendon Edwards is an abstract artist born in 1970 in Johannesburg, South Africa. He is currently living and working in KwaZulu-Natal."
+    />
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="Brendon Edwards | Works" />
+    <meta
+      property="og:description"
+      content="Brendon Edwards is an abstract artist born in 1970 in Johannesburg, South Africa. He is currently living and working in KwaZulu-Natal."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.brendonedwards.com/works" />
+    <meta
+      property="og:image"
+      content="/media/images/landing/brendon-edwards-portrait.webp"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Brendon Edwards - Artist and Creative"
+    />
+    <meta
+      name="twitter:description"
+      content="Brendon Edwards is an abstract artist born in Johannesburg, South Africa. He is currently living and working in KwaZulu-Natal."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.brendonedwards.com/media/images/landing/brendon-edwards-portrait.webp"
+    />
+
+    <!--Favicons-->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/media/favicons/favicon-32-darker.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/media/favicons/favicon-16-darker.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/media/favicons/favicon-180.png"
+    />
+
+    <!--Preload-->
+    <link rel="preconnect" href="https://www.artatafrica.art/" />
+    <link rel="preload" as="image" href="/media/logos/logo.webp" />
+
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/montserrat/montserrat-v23-latin-regular.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/montserrat/montserrat-v23-latin-700.woff2"
+      crossorigin
+    />
+    <!-- <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/source-sans-pro/source-sans-pro-v19-latin-regular.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/source-sans-pro/source-sans-pro-v19-latin-700.woff2"
+      crossorigin
+    /> -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.min.css" />
+
+    <title>Brendon Edwards | Works</title>
+  </head>
+  <body>
+    <header class="header scrolled-header">
+      <div class="container">
+        <div class="header__logo-box">
+          <a href="index.html"
+            ><img
+              src="/media/logos/logo.webp"
+              alt="Brendon Edwards Logo"
+              class="header__logo"
+              width="370"
+              height="59"
+          /></a>
+        </div>
+        <div class="navigation">
+          <input
+            type="checkbox"
+            class="navigation__checkbox"
+            id="navi-toggle"
+          />
+          <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon dark">&nbsp;</span>
+          </label>
+          <!-- <div class="navigation__background">&nbsp;</div> -->
+          <nav class="navigation__nav">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="/index.html" class="navigation__link">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a href="/works.html" class="navigation__link">Works</a>
+              </li>
+              <li class="navigation__item">
+                <a href="/about.html" class="navigation__link">About</a>
+              </li>
+              <!-- <li class="navigation__item">
+                <a href="blog.html" class="navigation__link">Blog</a>
+              </li> -->
+              <!-- <li class="navigation__item">
+                <a href="contact.html" class="navigation__link">Contact</a>
+              </li> -->
+            </ul>
+          </nav>
+        </div>
+        <div class="navigation-desktop">
+          <nav class="navigation-nav-desktop">
+            <ul class="navigation__list-desktop">
+              <li class="navigation__item-desktop">
+                <a
+                  href="/index.html"
+                  class="navigation__link-desktop dark-links"
+                  >Home</a
+                >
+              </li>
+              <li class="navigation__item-desktop">
+                <a
+                  href="/works.html"
+                  class="navigation__link-desktop dark-links"
+                  >Works</a
+                >
+              </li>
+              <li class="navigation__item-desktop">
+                <a
+                  href="/about.html"
+                  class="navigation__link-desktop dark-links"
+                  >About</a
+                >
+              </li>
+              <!-- <li class="navigation__item-desktop">
+                <a href="blog.html" class="navigation__link-desktop dark-links"
+                  >Blog</a
+                >
+              </li> -->
+              <!-- <li class="navigation__item-desktop">
+                <a
+                  href="contact.html"
+                  class="navigation__link-desktop dark-links"
+                  >Contact</a
+                >
+              </li> -->
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-works">
+        <div class="container">
+          <!-- <div class="section-works__works-filters">
+            <button
+              class="section-works__works-filters-btn"
+              onclick="filterObjects(this, 'all')"
+            >
+              All
+            </button>
+            <button
+              class="section-works__works-filters-btn"
+              onclick="filterObjects(this, 'large-sculptures')"
+            >
+              Large Sculptures
+            </button>
+            <button
+              class="section-works__works-filters-btn"
+              onclick="filterObjects(this, 'small-sculptures')"
+            >
+              Small Sculptures
+            </button>
+            <button
+              class="section-works__works-filters-btn"
+              onclick="filterObjects(this, 'functional-art')"
+            >
+              Functional Art
+            </button>
+          </div> -->
+          <div class="section-works__title-container">
+            <h1 class="section-works__title">Large Scale Installations</h1>
+            <p class="section-works__text">
+              Brendon has completed large scale installations throughout South
+              Africa. His works can be viewed below.
+            </p>
+          </div>
+          <div class="section-works__video-container">
+            <video
+              class="section-works__video"
+              width="900"
+              height="509"
+              controls="controls"
+              autoplay
+              loop
+            >
+              <source src="/media/large-sculptures.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <h2 class="section-works__title-small">Large Sculptures</h2>
+          <div class="section-works__works">
+            <div class="section-works__works-card large-sculptures">
+              <a
+                href="https://www.artatafrica.art/collections/brendon-edwards/products/symphony-of-spheres"
+                class="section-works__works-link"
+                target="_blank"
+                rel="nooppener noreferrer"
+              >
+                <img
+                  src="/media/images/works/Symphony-of-Spheres.webp"
+                  alt="Symphony of Spheres Sculpture"
+                  class="section-works__works-card-img"
+                  width="450"
+                  height="481"
+                />
+                <h2 class="section-works__works-card-title">
+                  Symphony of Spheres
+                </h2>
+                <p class="section-works__works-card-text">
+                  Medium : I - Beam.
+                  <br />
+                  <br />
+                  Dimensions : L 10 m x H 7 m x W 2,5 m.
+                </p>
+              </a>
+            </div>
+            <div class="section-works__works-card large-sculptures">
+              <a
+                href="https://www.artatafrica.art/collections/brendon-edwards/products/joy"
+                class="section-works__works-link"
+                target="_blank"
+                rel="nooppener noreferrer"
+              >
+                <img
+                  src="/media/images/works/Unbearable-Lightness-of-Being.webp"
+                  alt="Unbearable Lightness of Being Sculpture"
+                  class="section-works__works-card-img"
+                  width="450"
+                  height="299"
+                />
+                <h2 class="section-works__works-card-title">
+                  Unbearable Lightness of Being
+                </h2>
+                <p class="section-works__works-card-text">
+                  Medium : I - Beam.
+                  <br />
+                  <br />
+                  Dimensions : L 3 m x H 3 m x W 0,5 m.
+                </p>
+              </a>
+            </div>
+            <!-- <div class="section-works__works-card functional-art">
+              <a
+                href="https://www.artatafrica.art/collections/brendon-edwards/products/steel-gates-table"
+                class="section-works__works-link"
+                target="_blank"
+                rel="nooppener noreferrer"
+              >
+                <img
+                  src="/media/images/works/Huaping-Table.webp"
+                  alt="Huaping Table Sculpture"
+                  class="section-works__works-card-img"
+                  width="450"
+                  height="316"
+                />
+                <h2 class="section-works__works-card-title">Huaping Table</h2>
+                <p class="section-works__works-card-text">
+                  Medium: Solid Steel and 12 mm toughened glass.
+                  <br />
+                  <br />
+                  Dimensions : L 3 m x H 75 cm x W 1,2 m.
+                </p>
+              </a>
+            </div> -->
+            <!-- <div class="section-works__works-card functional-art">
+              <a
+                href="https://www.artatafrica.art/collections/brendon-edwards/products/white-wash-waves-table"
+                class="section-works__works-link"
+                target="_blank"
+                rel="nooppener noreferrer"
+              >
+                <img
+                  src="/media/images/works/Azure-Table.webp"
+                  alt="Azure Table Sculpture"
+                  class="section-works__works-card-img"
+                  width="450"
+                  height="322"
+                />
+                <h2 class="section-works__works-card-title">Azure Table</h2>
+                <p class="section-works__works-card-text">
+                  Medium: Powder coated steel, wood and 6 mm TH glass.
+                  <br />
+                  <br />
+                  Dimensions : L 4 m x H 90 cm x W 90 cm.
+                </p>
+              </a>
+            </div> -->
+            <!-- <div class="section-works__works-card small-sculptures">
+              <a
+                href="https://www.artatafrica.art/collections/brendon-edwards/products/blues"
+                class="section-works__works-link"
+                target="_blank"
+                rel="nooppener noreferrer"
+              >
+                <img
+                  src="/media/images/works/Simone-Blues.webp"
+                  alt="Simone Blues Sculpture"
+                  class="section-works__works-card-img"
+                  width="450"
+                  height="300"
+                />
+                <h2 class="section-works__works-card-title">Simone Blues</h2>
+                <p class="section-works__works-card-text">
+                  Medium: Powder coated steel - steel and perspex base.
+                  <br />
+                  <br />
+                  Dimensions : L 90 cm x H 40 cm x W 40 cm.
+                </p>
+              </a>
+            </div> -->
+            <div class="section-works__works-card large-sculptures">
+              <a
+                href="https://www.artatafrica.art/collections/brendon-edwards/products/beethovens-fifth"
+                class="section-works__works-link"
+                target="_blank"
+                rel="nooppener noreferrer"
+              >
+                <img
+                  src="/media/images/works/Nexus.webp"
+                  alt="Nexus Sculpture"
+                  class="section-works__works-card-img"
+                  width="450"
+                  height="303"
+                />
+                <h2 class="section-works__works-card-title">Nexus</h2>
+                <p class="section-works__works-card-text">
+                  Medium: I - Beam.
+                  <br />
+                  <br />
+                  Dimensions : L 20 m x H 6 m x W 15 m.
+                </p>
+              </a>
+            </div>
+            <!-- <div class="section-works__works-card small-sculptures">
+              <a
+                href="https://www.artatafrica.art/collections/brendon-edwards/products/generis"
+                class="section-works__works-link"
+                target="_blank"
+                rel="nooppener noreferrer"
+              >
+                <img
+                  src="/media/images/works/Sui-Generis.webp"
+                  alt="Sui Generis Sculpture"
+                  class="section-works__works-card-img"
+                  width="450"
+                  height="300"
+                  loading="lazy"
+                />
+                <h2 class="section-works__works-card-title">Sui Generis</h2>
+                <p class="section-works__works-card-text">
+                  Medium: Powder coated Steel.
+                  <br />
+                  <br />
+                  Dimensions : L 90 cm x H 40 cm x W 40 cm.
+                </p>
+              </a>
+            </div> -->
+            <!-- <div class="section-works__works-card small-sculptures">
+              <a
+                href="https://www.artatafrica.art/collections/brendon-edwards/products/frost"
+                class="section-works__works-link"
+                target="_blank"
+                rel="nooppener noreferrer"
+              >
+                <img
+                  src="/media/images/works/The-Gallery-of-Frost.webp"
+                  alt="The Gallery of Frost Sculpture"
+                  class="section-works__works-card-img"
+                  width="450"
+                  height="300"
+                  loading="lazy"
+                />
+                <h2 class="section-works__works-card-title">
+                  The Gallery of Frost
+                </h2>
+                <p class="section-works__works-card-text">
+                  Medium: Powder coated Steel.
+                  <br />
+                  <br />
+                  Dimensions : L 90 cm x H 40 cm x W 40 cm.
+                </p>
+              </a>
+            </div> -->
+            <!-- <div class="section-works__works-card functional-art">
+              <a
+                href="https://www.artatafrica.art/collections/brendon-edwards/products/log-table"
+                class="section-works__works-link"
+                target="_blank"
+                rel="nooppener noreferrer"
+              >
+                <img
+                  src="/media/images/works/Burmese-Table.webp"
+                  alt="Burmese Table Sculpture"
+                  class="section-works__works-card-img"
+                  width="450"
+                  height="300"
+                  loading="lazy"
+                />
+                <h2 class="section-works__works-card-title">Burmese Table</h2>
+                <p class="section-works__works-card-text">
+                  Medium: Wood and 15 mm TH glass.
+                  <br />
+                  <br />
+                  Dimensions : L 4 m x H 75 cm x W 1,2 m.
+                </p>
+              </a>
+            </div> -->
+            <div class="section-works__works-card large-sculptures">
+              <a
+                href="https://www.artatafrica.art/collections/brendon-edwards/products/horus"
+                class="section-works__works-link"
+                target="_blank"
+                rel="nooppener noreferrer"
+              >
+                <img
+                  src="/media/images/works/Horus.webp"
+                  alt="Horus Sculpture"
+                  class="section-works__works-card-img"
+                  width="450"
+                  height="300"
+                  loading="lazy"
+                />
+                <h2 class="section-works__works-card-title">Horus</h2>
+                <p class="section-works__works-card-text">
+                  Medium: I - Beam.
+                  <br />
+                  <br />
+                  Dimensions : L 2,5 m x H 4 m x W 1 m.
+                </p>
+              </a>
+            </div>
+            <div class="section-works__works-card large-sculptures">
+              <a
+                href="https://www.artatafrica.art/collections/brendon-edwards/products/nautilis"
+                class="section-works__works-link"
+                target="_blank"
+                rel="nooppener noreferrer"
+              >
+                <img
+                  src="/media/images/works/Nautilus.webp"
+                  alt="Nautilus Sculpture"
+                  class="section-works__works-card-img"
+                  width="450"
+                  height="300"
+                  loading="lazy"
+                />
+                <h2 class="section-works__works-card-title">Nautilus</h2>
+                <p class="section-works__works-card-text">
+                  Medium: I - Beam.
+                  <br />
+                  <br />
+                  Dimensions : L 2 m x H 1 m x W 10 cm.
+                </p>
+              </a>
+            </div>
+          </div>
+          <h2 class="section-works__title-small">Small Sculptures</h2>
+          <div class="section-works__small-sculptures-img-container">
+            <img
+              src="/media/images/other/WhatsApp Image 2023-02-09 at 11.27.14.jpeg"
+              alt="Small sculptures"
+              class="section-works__small-sculptures-img"
+              width="700"
+              height="654"
+              loading="lazy"
+            />
+          </div>
+          <div class="section-works__works">
+            <div class="section-works__works-card small-sculptures">
+              <a
+                href="https://www.artatafrica.art/collections/brendon-edwards/products/blues"
+                class="section-works__works-link"
+                target="_blank"
+                rel="nooppener noreferrer"
+              >
+                <img
+                  src="/media/images/works/Simone-Blues.webp"
+                  alt="Simone Blues Sculpture"
+                  class="section-works__works-card-img"
+                  width="450"
+                  height="300"
+                />
+                <h2 class="section-works__works-card-title">Simone Blues</h2>
+                <p class="section-works__works-card-text">
+                  Medium: Powder coated steel - steel and perspex base.
+                  <br />
+                  <br />
+                  Dimensions : L 90 cm x H 40 cm x W 40 cm.
+                </p>
+              </a>
+            </div>
+
+            <div class="section-works__works-card small-sculptures">
+              <a
+                href="https://www.artatafrica.art/collections/brendon-edwards/products/generis"
+                class="section-works__works-link"
+                target="_blank"
+                rel="nooppener noreferrer"
+              >
+                <img
+                  src="/media/images/works/Sui-Generis.webp"
+                  alt="Sui Generis Sculpture"
+                  class="section-works__works-card-img"
+                  width="450"
+                  height="300"
+                  loading="lazy"
+                />
+                <h2 class="section-works__works-card-title">Sui Generis</h2>
+                <p class="section-works__works-card-text">
+                  Medium: Powder coated Steel.
+                  <br />
+                  <br />
+                  Dimensions : L 90 cm x H 40 cm x W 40 cm.
+                </p>
+              </a>
+            </div>
+            <div class="section-works__works-card small-sculptures">
+              <a
+                href="https://www.artatafrica.art/collections/brendon-edwards/products/frost"
+                class="section-works__works-link"
+                target="_blank"
+                rel="nooppener noreferrer"
+              >
+                <img
+                  src="/media/images/works/The-Gallery-of-Frost.webp"
+                  alt="The Gallery of Frost Sculpture"
+                  class="section-works__works-card-img"
+                  width="450"
+                  height="300"
+                  loading="lazy"
+                />
+                <h2 class="section-works__works-card-title">
+                  The Gallery of Frost
+                </h2>
+                <p class="section-works__works-card-text">
+                  Medium: Powder coated Steel.
+                  <br />
+                  <br />
+                  Dimensions : L 90 cm x H 40 cm x W 40 cm.
+                </p>
+              </a>
+            </div>
+          </div>
+          <h2 class="section-works__title-small">Functional Art</h2>
+          <div class="section-works__works">
+            <div class="section-works__works-card functional-art">
+              <a
+                href="https://www.artatafrica.art/collections/brendon-edwards/products/steel-gates-table"
+                class="section-works__works-link"
+                target="_blank"
+                rel="nooppener noreferrer"
+              >
+                <img
+                  src="/media/images/works/Huaping-Table.webp"
+                  alt="Huaping Table Sculpture"
+                  class="section-works__works-card-img"
+                  width="450"
+                  height="316"
+                />
+                <h2 class="section-works__works-card-title">Huaping Table</h2>
+                <p class="section-works__works-card-text">
+                  Medium: Solid Steel and 12 mm toughened glass.
+                  <br />
+                  <br />
+                  Dimensions : L 3 m x H 75 cm x W 1,2 m.
+                </p>
+              </a>
+            </div>
+            <div class="section-works__works-card functional-art">
+              <a
+                href="https://www.artatafrica.art/collections/brendon-edwards/products/white-wash-waves-table"
+                class="section-works__works-link"
+                target="_blank"
+                rel="nooppener noreferrer"
+              >
+                <img
+                  src="/media/images/works/Azure-Table.webp"
+                  alt="Azure Table Sculpture"
+                  class="section-works__works-card-img"
+                  width="450"
+                  height="322"
+                />
+                <h2 class="section-works__works-card-title">Azure Table</h2>
+                <p class="section-works__works-card-text">
+                  Medium: Powder coated steel, wood and 6 mm TH glass.
+                  <br />
+                  <br />
+                  Dimensions : L 4 m x H 90 cm x W 90 cm.
+                </p>
+              </a>
+            </div>
+
+            <div class="section-works__works-card functional-art">
+              <a
+                href="https://www.artatafrica.art/collections/brendon-edwards/products/log-table"
+                class="section-works__works-link"
+                target="_blank"
+                rel="nooppener noreferrer"
+              >
+                <img
+                  src="/media/images/works/Burmese-Table.webp"
+                  alt="Burmese Table Sculpture"
+                  class="section-works__works-card-img"
+                  width="450"
+                  height="300"
+                  loading="lazy"
+                />
+                <h2 class="section-works__works-card-title">Burmese Table</h2>
+                <p class="section-works__works-card-text">
+                  Medium: Wood and 15 mm TH glass.
+                  <br />
+                  <br />
+                  Dimensions : L 4 m x H 75 cm x W 1,2 m.
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__logo-container">
+            <img
+              src="media/logos/logo-white.png"
+              alt="Brendon Edwards Logo"
+              class="footer__logo"
+              width="370"
+              height="59"
+            />
+          </div>
+          <div class="footer__links-outer">
+            <div class="footer__links-container">
+              <ul class="footer__links-container">
+                <li class="footer__links-title">Contact</li>
+                <li class="footer__links-link">
+                  <a
+                    href="mailto:brendon@brendonedwards.com"
+                    target="_blank"
+                    rel="nooppener noreferrer"
+                    class="footer__link"
+                    >Email</a
+                  >
+                </li>
+                <li class="footer__links-link">
+                  <a
+                    href="https://wa.me/27792703656"
+                    target="_blank"
+                    rel="nooppener noreferrer"
+                    class="footer__link"
+                    >WhatsApp</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__links-container">
+              <ul class="footer__links-container">
+                <li class="footer__links-title">Quick Links</li>
+                <li class="footer__links-link">
+                  <a href="/index.html" class="footer__link">Home</a>
+                </li>
+                <li class="footer__links-link">
+                  <a href="/works.html" class="footer__link">Works</a>
+                </li>
+                <li class="footer__links-link">
+                  <a href="/about.html" class="footer__link">About</a>
+                </li>
+                <!-- <li class="footer__links-link">
+                  <a href="/blog.html" class="footer__link">Blog</a>
+                </li> -->
+              </ul>
+            </div>
+            <div class="footer__links-container">
+              <ul class="footer__links-container">
+                <li class="footer__links-title">Social</li>
+                <li class="footer__links-link">
+                  <a
+                    href="https://www.facebook.com/brendon.edwards.161"
+                    target="_blank"
+                    rel="nooppener noreferrer"
+                    class="footer__link"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="footer__links-link">
+                  <a
+                    href="https://www.instagram.com/brendon_edwards"
+                    target="_blank"
+                    rel="nooppener noreferrer"
+                    class="footer__link"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="footer__links-link">
+                  <a
+                    href="https://www.linkedin.com/in/brendon-edwards-93832551"
+                    target="_blank"
+                    rel="nooppener noreferrer"
+                    class="footer__link"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__copyright-container">
+            <p class="footer__credit">
+              Handcoded by
+              <a
+                href="https://www.ryanoliver.dev/"
+                target="_blank"
+                rel="nooppener noreferrer"
+                class="credit-link"
+                >Ryan Oliver</a
+              >
+              .
+            </p>
+            <p class="footer__copyright" id="footer-year">
+              &copy; Brendon Edwards 2022. All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- <script src="https://unpkg.com/swup@3"></script>
+    <script src="page-transition.js"></script> -->
+    <script defer src="page-transition.js"></script>
+    <!-- <script>
+      // filterObjects("all");
+      filterObjects(
+        document.querySelector(".section-works__works-filters-btn"),
+        "all"
+      );
+
+      function filterObjects(element, c) {
+        let x, i;
+        x = document.getElementsByClassName("section-works__works-card");
+        if (c === "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          removeClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+        }
+        let buttons = document.querySelectorAll(
+          ".section-works__works-filters-btn"
+        );
+        for (let i = 0; i < buttons.length; i++) {
+          removeClass(buttons[i], "active");
+        }
+        addClass(element, "active");
+      }
+
+      function addClass(element, name) {
+        let i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) === -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+
+      function removeClass(element, name) {
+        let i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+    </script> -->
+    <script>
+      const year = new Date().getFullYear();
+
+      const date = `&copy; Brendon Edwards ${year}. All Rights Reserved.`;
+
+      document.getElementById("footer-year").innerHTML = date;
+    </script>
+  </body>
+</html>
